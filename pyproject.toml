@@ -1,0 +1,17 @@
+[project]
+name = "rag-n-roll"
+version = "0.1.0"
+description = "Rag-N-Roll is a fun, full-stack AI document assistant that uses advanced RAG techniques to chat with your files, compare documents, and deliver instant insights."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "langchain>=1.1.0",
+    "langchain-community>=0.4.1",
+    "langchain-groq>=1.1.0",
+    "langchain-pinecone>=0.2.13",
+    "pymupdf>=1.26.6",
+    "pypdf>=6.4.0",
+    "python-dotenv>=1.2.1",
+    "structlog>=25.5.0",
+]
