@@ -31,7 +31,8 @@ class ModelLoader:
     def load_embedding_models(self):
         try:
             model_name = self.config["embedding_model"]["model_name"]
-            embedding_model = GoogleGenerativeAIEmbeddings(model=model_name)
+            model_task_type = self.config["embedding_model"]["task_type"]
+            embedding_model = GoogleGenerativeAIEmbeddings(model=model_name, task_type=model_task_type)
             logger_obj.info("Embedding model successfully loaded.")
             return embedding_model
         except Exception as e:
