@@ -1,0 +1,19 @@
+pinecone_db:
+  collection_name: "rag-n-roll-documents"
+  dimensions: 1536
+
+embedding_model:
+  provider: "google"
+  model_name: "gemini-embedding-001"
+  task_type: "RETRIEVAL_DOCUMENT"
+  dimensions: 1536
+
+retriever:
+  top_k: 10
+
+llm:
+  google:
+    provider: "google"
+    model_name: "gemini-3-pro-preview"
+    temperature: 0
+    max_output_tokens: 2048
